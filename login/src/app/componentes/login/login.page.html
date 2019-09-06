@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title text-center>Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <br>
+  <img class="imagenLogin" src= " http://avellanedahoy.com.ar/imgNoticias/avellanedahoy.com.ar_5125_2422016_12.jpg"
+   height="180px">
+<ion-item>
+  <ion-label position= "floating">Correo electrónico</ion-label>
+  <ion-input type="text" [(ngModel)]="email"  name= "email"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position= "floating">Contraseña</ion-label>
+  <ion-input type="password" [(ngModel)]="password" name= "contraseña"></ion-input>
+</ion-item>
+<br>
+<ion-button (click)="onSubmitLogin()" expand= "block">Entrar</ion-button>
+</ion-content>
